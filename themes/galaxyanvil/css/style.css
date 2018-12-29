@@ -27,7 +27,8 @@
 }
 
 /* LAYOUT - MAIN */
-.user-css-presentation .page, .user-css-presentation .worldmenu-inner {
+.user-css-presentation .page, .user-css-presentation .worldmenu-inner,
+.user-css-map-sidebar {
     background-image: none;
     font-family: IBM Plex Sans Condensed, sans-serif;
     border: none;
@@ -35,7 +36,8 @@
 }
 
 /* LAYOUT - HTML */
-.user-css-presentation a, .user-css-presentation a:focus {
+.user-css-presentation a, .user-css-presentation a:focus, .user-css-presentation b,
+.user-css-map-sidebar a, .user-css-map-sidebar a:focus, .user-css-map-sidebar b {
     font-weight: bold;
 }
 
@@ -44,22 +46,21 @@
     display: inline-block;
 }
 
-.user-css-presentation b {
-    font-weight: bold;
-}
-
-.user-css-presentation blockquote {
+.user-css-presentation blockquote,
+.user-css-map-sidebar blockquote {
     border-radius: 4px;
     border-left: 10px solid;
     font-family: IBM Plex Sans Condensed, sans-serif;
     font-size: 16px;
 }
 
-.user-css-presentation blockquote .author {
+.user-css-presentation blockquote .author,
+.user-css-map-sidebar blockquote .author {
     font-size: 16px;
 }
 
-.user-css-presentation code, .user-css-presentation pre {
+.user-css-presentation code, .user-css-presentation pre,
+.user-css-map-sidebar code, .user-css-map-sidebar pre {
     border: none;
     border-radius: 2px;
 }
@@ -68,12 +69,14 @@
     margin-bottom: 0;
 }
 
-.user-css-presentation h1, .user-css-presentation h1 a {
+.user-css-presentation h1, .user-css-presentation h1 a,
+.user-css-map-sidebar h1 {
     font-size: 42px;
     font-family: Mina, serif;
 }
 
-.user-css-presentation h2 {
+.user-css-presentation h2,
+.user-css-map-sidebar h2 {
     font-size: 30px;
     font-family: Mina, serif;
     border-bottom: 1px solid;
@@ -81,7 +84,8 @@
     margin-top: 25px;
 }
 
-.user-css-presentation h3 {
+.user-css-presentation h3,
+.user-css-map-sidebar h3 {
     font-family: Mina, serif;
     font-size: 24px;
     margin-top: 15px;
@@ -89,7 +93,8 @@
     border-bottom: 1px solid;
 }
 
-.user-css-presentation h4 {
+.user-css-presentation h4,
+.user-css-map-sidebar h4 {
     font-family: Mina, serif;
     font-size: 20px;
     text-transform: uppercase;
@@ -97,7 +102,8 @@
     margin-bottom: 0;
 }
 
-.user-css-presentation h5 {
+.user-css-presentation h5,
+.user-css-map-sidebar h5 {
     font-family: Mina, serif;
     font-size: 16px;
     text-transform: uppercase;
@@ -105,7 +111,8 @@
     margin-bottom: 0;
 }
 
-.user-css-presentation h6 {
+.user-css-presentation h6,
+.user-css-map-sidebar h6 {
     font-family: Mina, serif;
     font-size: 14px;
     text-transform: uppercase;
@@ -113,21 +120,25 @@
     margin-bottom: 0;
 }
 
-.user-css-presentation img {
+.user-css-presentation img,
+.user-css-map-sidebar img {
     border-radius: 5px;
 }
 
-.user-css-presentation .user-css-image-thumbnail {
+.user-css-presentation .user-css-image-thumbnail,
+.user-css-map-sidebar .user-css-image-thumbnail {
     border-radius: 5px;
     padding: 0;
     margin: 10px;
 }
 
-.user-css-presentation .user-css-image-thumbnail img {
+.user-css-presentation .user-css-image-thumbnail img,
+.user-css-map-sidebar .user-css-image-thumbnail img {
     border-radius: 5px 5px 0 0;
 }
 
-.user-css-presentation p {
+.user-css-presentation p,
+.user-css-map-sidebar p {
     font-weight: normal;
     line-height: 1.4em;
 }
@@ -139,13 +150,13 @@
 }
 
 /* LAYOUT - BOOTSTRAP CLASSES */
-.user-css-presentation .alert {
+.user-css-presentation .alert,
+.user-css-map-sidebar .alert {
     border-radius: 4px;
     border: none;
     border-left: 34px solid;
     font-size: 13px;
     padding: 5px 10px;
-    padding-left: 10px;
     text-align: justify;
     width: 85%;
     margin-left: auto;
@@ -154,7 +165,8 @@
     min-height: 70px;
 }
 
-.user-css-presentation .alert h5:first-child {
+.user-css-presentation .alert h5:first-child,
+.user-css-map-sidebar .alert h5:first-child {
     padding: 5px 10px;
     margin: 0 0 10px 0;
     position: absolute;
@@ -165,26 +177,31 @@
     transform-origin: 0 0;
 }
 
-.user-css-presentation .btn {
+.user-css-presentation .btn,
+.user-css-map-sidebar .btn {
     border: none !important;
     border-radius: 3px;
     margin: 2px 1px;
 }
 
-.user-css-presentation .breadcrumb {
+.user-css-presentation .breadcrumb,
+.user-css-map-sidebar .breadcrumb {
     font-size: 80%;
 }
 
-.user-css-presentation .breadcrumb li .active {
+.user-css-presentation .breadcrumb li .active,
+.user-css-map-sidebar .breadcrumb li .active {
     font-weight: bold;
     display: inline-block;
 }
 
-.user-css-presentation .spoiler-button {
+.user-css-presentation .spoiler-button,
+.user-css-map-sidebar .spoiler-button {
     margin-bottom: 10px;
 }
 
-.user-css-presentation .label {
+.user-css-presentation .label,
+.user-css-map-sidebar .label {
     border: none;
     border-radius: 3px;
 }
@@ -224,41 +241,49 @@
     border: none;
 }
 
-.user-css-presentation .table {
+.user-css-presentation .table,
+.user-css-map-sidebar .table {
     border: none;
     border-collapse: collapse;
     border-radius: 7px;
     overflow: hidden;
 }
 
-.user-css-presentation .table tr {
+.user-css-presentation .table tr,
+.user-css-map-sidebar .table tr {
     background: transparent !important;
 }
 
-.user-css-presentation .table td, .user-css-presentation .table th {
+.user-css-presentation .table td, .user-css-presentation .table th,
+.user-css-map-sidebar .table td, .user-css-map-sidebar .table th {
     border: none;
 }
 
-.user-css-presentation .well {
+.user-css-presentation .well,
+.user-css-map-sidebar .well {
     border: none;
     border-radius: 4px;
 }
 
 /* LAYOUT - WORLDANVIL CLASSES */
-.user-css-presentation .aloud, .user-css-presentation .panel-greatgm {
+.user-css-presentation .aloud, .user-css-presentation .panel-greatgm,
+.user-css-map-sidebar .aloud {
     border-radius: 4px;
     border: none;
 }
 
-.user-css-presentation .artist-credits {
+.user-css-presentation .artist-credits,
+.user-css-map-sidebar .artist-credits {
     border-radius: 5px;
 }
 
-.user-css-presentation .user-css-image-thumbnail .artist-credits {
+.user-css-presentation .user-css-image-thumbnail .artist-credits,
+.user-css-map-sidebar .user-css-image-thumbnail .artist-credits {
     border-radius: 0 0 5px 5px;
 }
 
-.user-css-presentation .text-abbreviation {
+.user-css-presentation .text-abbreviation,
+.user-css-map-sidebar .text-abbreviation {
     text-decoration: underline dashed;
     border: none;
     display: inline-block;
@@ -296,7 +321,8 @@
     border-radius: 5px 5px 0 0;
 }
 
-.user-css-presentation .dropcap {
+.user-css-presentation .dropcap,
+.user-css-map-sidebar .dropcap {
     font-family: Mina, serif;
 }
 
@@ -327,7 +353,8 @@
     height: 32px;
 }
 
-.user-css-presentation .phrase-key {
+.user-css-presentation .phrase-key,
+.user-css-map-sidebar .phrase-key {
     display: block;
     padding-top: 10px;
 }
@@ -369,12 +396,13 @@
     color: black;
 }
 
-.user-css-presentation .label {
+.user-css-presentation .label,
+.user-css-map-sidebar .label {
     font-weight: normal;
     font-size: 11px;
 }
 
-.user-css-presentation  .label.tag:hover {
+.user-css-presentation .label.tag:hover {
     font-weight: normal;
     border: none;
     border-radius: 3px;
@@ -392,11 +420,13 @@
     padding: 12.5px;
 }
 
-.user-css-presentation .tooltip {
+.user-css-presentation .tooltip,
+.user-css-map-sidebar .tooltip {
     opacity: 1 !important;
 }
 
-.user-css-presentation .tooltip .tooltip-inner {
+.user-css-presentation .tooltip .tooltip-inner,
+.user-css-map-sidebar .tooltip .tooltip-inner {
     border: none;
     border-radius: 4px;
 }
@@ -434,7 +464,6 @@
 }
 
 .user-css-presentation .glossary-block .article-panel {
-    flex-basis: 33.3%;
     margin-left: 7.5px;
     margin-right: 7.5px;
     flex: 0 1 calc(33.3% - 15px);
@@ -505,8 +534,7 @@
 
 .user-css-presentation .row-border-group .user-row .col-md-6:after, .user-css-presentation .row-border-group .user-row .col-md-6:before,
 .user-css-presentation .row-border-group .user-row .col-md-4:after, .user-css-presentation .row-border-group .user-row .col-md-4:before,
-.user-css-presentation .row-border-group .user-row .col-md-12:after
-{
+.user-css-presentation .row-border-group .user-row .col-md-12:after {
     content: url(https://www.worldanvil.com/uploads/images/d4222ca4f7e45bb789519bd04deb8449.gif);
     position: absolute;
 }
@@ -594,8 +622,7 @@
 .user-css-presentation .row-border-group .user-row:only-child .col-md-6:first-child:before,
 .user-css-presentation .row-border-group .user-row:only-child .col-md-6:last-child:before,
 .user-css-presentation .row-border-group .user-row:only-child .col-md-4:first-child:before,
-.user-css-presentation .row-border-group .user-row:only-child .col-md-4:last-child:before
-{
+.user-css-presentation .row-border-group .user-row:only-child .col-md-4:last-child:before {
     display: none;
 }
 
@@ -621,10 +648,26 @@
     width: 100%;
 }
 
-.user-css-presentation .page, .user-css-presentation .worldmenu-inner {
+.user-css-presentation .page,
+.user-css-map-sidebar {
     background-color: var(--default3Transparent);
     color: var(--defaultDMuted);
     box-shadow: 0 0 11px 2px var(--default3Transparent);
+}
+
+.user-css-map-sidebar::before {
+    content: url(../images/empty.gif);
+    background-color: black;
+    background-image: url(../images/background.jpg);
+    background-attachment: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    z-index: -2;
+    height: 100%;
+    width: 100%;
 }
 
 .user-css-presentation .worldmenu-inner {
@@ -634,81 +677,98 @@
 }
 
 /* HEADINGS */
-.user-css-presentation h1, .user-css-presentation h1 a {
+.user-css-presentation h1, .user-css-presentation h1 a,
+.user-css-map-sidebar h1 {
     color: var(--primaryA);
     background: linear-gradient(var(--defaultA), var(--primaryA), var(--accentA));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-.user-css-presentation h1 small, .user-css-presentation h1 a small, .user-css-presentation h4.article-subheading {
+.user-css-presentation h1 small, .user-css-presentation h1 a small,
+.user-css-map-sidebar h1 small {
     color: var(--primary8);
     background: linear-gradient(var(--default8), var(--primary8), var(--accent8));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-.user-css-presentation h4.article-subheading {
+.user-css-presentation h4.article-subheading,
+.user-css-map-sidebar h4.article-subheading {
     background: linear-gradient(var(--accent8), var(--primary8), var(--default8));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-.user-css-presentation h2 {
+.user-css-presentation h2,
+.user-css-map-sidebar h2 {
     color: var(--primaryA);
 }
 
-.user-css-presentation h2 small {
+.user-css-presentation h2 small,
+.user-css-map-sidebar h2 small {
     color: var(--primary8);
 }
 
-.user-css-presentation h3 {
+.user-css-presentation h3,
+.user-css-map-sidebar h3 {
     color: var(--midPrimaryAccentA);
 }
 
-.user-css-presentation h3 small {
+.user-css-presentation h3 small,
+.user-css-map-sidebar h3 small {
     color: var(--midPrimaryAccent8);
 }
 
-.user-css-presentation h4 {
+.user-css-presentation h4,
+.user-css-map-sidebar h4 {
     color: var(--accentA);
 }
 
-.user-css-presentation h4 small {
+.user-css-presentation h4 small,
+.user-css-map-sidebar h4 small {
     color: var(--accent8);
 }
 
-.user-css-presentation h5 {
+.user-css-presentation h5,
+.user-css-map-sidebar h5 {
     color: var(--midDefaultAccentA);
 }
 
-.user-css-presentation h5 small {
+.user-css-presentation h5 small,
+.user-css-map-sidebar h5 small {
     color: var(--midDefaultAccent8);
 }
 
-.user-css-presentation h6 {
+.user-css-presentation h6,
+.user-css-map-sidebar h6 {
     color: var(--defaultA);
 }
 
-.user-css-presentation h6 small {
+.user-css-presentation h6 small,
+.user-css-map-sidebar h6 small {
     color: var(--default8);
 }
 
 /* HORIZONTAL RULES */
-.user-css-presentation hr {
+.user-css-presentation hr,
+.user-css-map-sidebar hr {
     border-color: var(--defaultA);
 }
 
 /* LINKS */
-.user-css-presentation a, .user-css-presentation a:focus {
+.user-css-presentation a, .user-css-presentation a:focus,
+.user-css-map-sidebar a, .user-css-map-sidebar a:focus {
     color: var(--primaryD);
 }
 
-.user-css-presentation .text-abbreviation {
+.user-css-presentation .text-abbreviation,
+.user-css-map-sidebar .text-abbreviation {
     color: var(--primaryC);
 }
 
-.user-css-presentation a:hover, .user-css-presentation .text-abbreviation:hover {
+.user-css-presentation a:hover, .user-css-presentation .text-abbreviation:hover,
+.user-css-map-sidebar a:hover, .user-css-map-sidebar .text-abbreviation:hover {
     color: var(--primaryDMuted);
 }
 
@@ -725,57 +785,67 @@
 }
 
 /* BLOCKQUOTES */
-.user-css-presentation blockquote {
+.user-css-presentation blockquote,
+.user-css-map-sidebar blockquote {
     background: var(--primary3Transparent);
     border-color: var(--primaryDTransparent);
     color: var(--primaryDMuted);
     box-shadow: 0 0 2px 2px var(--primaryDTransparent);
 }
 
-.user-css-presentation blockquote .author {
+.user-css-presentation blockquote .author,
+.user-css-map-sidebar blockquote .author {
     color: var(--primaryAMuted);
 }
 
-.user-css-presentation blockquote small, .user-css-presentation blockquote .author small {
+.user-css-presentation blockquote small, .user-css-presentation blockquote .author small,
+.user-css-map-sidebar blockquote small, .user-css-map-sidebar blockquote .author small {
     color: var(--primary8Muted);
 }
 
 /* ALERTS */
-.user-css-presentation .alert-default {
+.user-css-presentation .alert-default,
+.user-css-map-sidebar .alert-default {
     background-color: var(--default3Transparent);
     border-color: var(--default9Transparent);
     color: var(--defaultDMuted);
     box-shadow: 0 0 2px 2px var(--default9Transparent);
 }
 
-.user-css-presentation .alert-default h5:first-child {
+.user-css-presentation .alert-default h5:first-child,
+.user-css-map-sidebar .alert-default h5:first-child {
     color: var(--defaultDMuted);
 }
 
-.user-css-presentation .alert-primary {
+.user-css-presentation .alert-primary,
+.user-css-map-sidebar .alert-primary {
     background-color: var(--primary3Transparent);
     border-color: var(--primary9Transparent);
     color: var(--primaryDMuted);
     box-shadow: 0 0 2px 2px var(--primary9Transparent);
 }
 
-.user-css-presentation .alert-primary h5:first-child {
+.user-css-presentation .alert-primary h5:first-child,
+.user-css-map-sidebar .alert-primary h5:first-child {
     color: var(--primaryDMuted);
 }
 
-.user-css-presentation .alert-secondary {
+.user-css-presentation .alert-secondary,
+.user-css-map-sidebar .alert-secondary {
     background-color: var(--accent3Transparent);
     border-color: var(--accent9Transparent);
     color: var(--accentDMuted);
     box-shadow: 0 0 2px 2px var(--accent9Transparent);
 }
 
-.user-css-presentation .alert-secondary h5:first-child {
+.user-css-presentation .alert-secondary h5:first-child,
+.user-css-map-sidebar .alert-secondary h5:first-child {
     color: var(--accentDMuted);
 }
 
 /* ALOUD */
-.user-css-presentation .aloud {
+.user-css-presentation .aloud, 
+.user-css-map-sidebar .aloud {
     background: var(--default5Transparent);
     color: var(--defaultDMuted);
     box-shadow: 0 0 2px 2px var(--defaultATransparent);
@@ -824,41 +894,49 @@
 }
 
 /* BUTTONS */
-.user-css-presentation .btn-default {
+.user-css-presentation .btn-default,
+.user-css-map-sidebar .btn-default {
     color: var(--defaultDMuted) !important;
     background: var(--defaultATransparent) !important;
 }
 
-.user-css-presentation .btn-default:hover {
+.user-css-presentation .btn-default:hover,
+.user-css-map-sidebar .btn-default:hover {
     color: var(--defaultEMuted) !important;
     background: var(--defaultDTransparent) !important;
 }
 
-.user-css-presentation .btn-primary {
+.user-css-presentation .btn-primary,
+.user-css-map-sidebar .btn-primary {
     color: var(--primaryDMuted) !important;
     background: var(--primaryATransparent) !important;
 }
 
-.user-css-presentation .btn-primary:hover {
+.user-css-presentation .btn-primary:hover,
+.user-css-map-sidebar .btn-primary:hover {
     color: var(--primaryEMuted) !important;
     background: var(--primaryDTransparent) !important;
 }
 
-.user-css-presentation .btn-secondary {
+.user-css-presentation .btn-secondary,
+.user-css-map-sidebar .btn-secondary {
     color: var(--accentDMuted) !important;
     background: var(--accentATransparent) !important;
 }
 
-.user-css-presentation .btn-secondary:hover {
+.user-css-presentation .btn-secondary:hover,
+.user-css-map-sidebar .btn-secondary:hover {
     color: var(--accentEMuted) !important;
     background: var(--accentDTransparent) !important;
 }
 
-.user-css-presentation .btn-link {
+.user-css-presentation .btn-link,
+.user-css-map-sidebar .btn-link {
     color: var(--primaryD);
 }
 
-.user-css-presentation .btn-link:hover {
+.user-css-presentation .btn-link:hover,
+.user-css-map-sidebar .btn-link:hover {
     color: var(--primaryDMuted);
 }
 
@@ -869,72 +947,86 @@
 }
 
 /* LABELS */
-.user-css-presentation .label-default {
+.user-css-presentation .label-default,
+.user-css-map-sidebar .label-default {
     background: var(--defaultAMuted);
     color: var(--default3Muted);
 }
 
-.user-css-presentation a.label-default:hover, .user-css-presentation a .label-default:hover {
+.user-css-presentation a.label-default:hover, .user-css-presentation a .label-default:hover,
+.user-css-map-sidebar a.label-default:hover, .user-css-map-sidebar a .label-default:hover {
     background: var(--defaultDMuted);
     color: var(--default3Muted);
 }
 
-.user-css-presentation .label-primary {
+.user-css-presentation .label-primary,
+.user-css-map-sidebar .label-primary {
     background: var(--primaryAMuted);
     color: var(--primary3Muted);
 }
 
-.user-css-presentation a.label-primary:hover, .user-css-presentation a .label-primary:hover {
+.user-css-presentation a.label-primary:hover, .user-css-presentation a .label-primary:hover,
+.user-css-map-sidebar a.label-primary:hover, .user-css-map-sidebar a .label-primary:hover {
     background: var(--primaryDMuted);
     color: var(--primary3Muted);
 }
 
-.user-css-presentation .label-secondary {
+.user-css-presentation .label-secondary,
+.user-css-map-sidebar .label-secondary {
     background: var(--accentAMuted);
     color: var(--accent3Muted);
 }
 
-.user-css-presentation a.label-secondary:hover, .user-css-presentation a .label-secondary:hover {
+.user-css-presentation a.label-secondary:hover, .user-css-presentation a .label-secondary:hover,
+.user-css-map-sidebar a.label-secondary:hover, .user-css-map-sidebar a .label-secondary:hover {
     background: var(--accentDMuted);
     color: var(--accent3Muted);
 }
 
-.user-css-presentation .label-info {
+.user-css-presentation .label-info,
+.user-css-map-sidebar .label-info {
     background: #aababa;
     color: #334343;
 }
 
-.user-css-presentation a.label-info:hover, .user-css-presentation a .label-info:hover {
+.user-css-presentation a.label-info:hover, .user-css-presentation a .label-info:hover,
+.user-css-map-sidebar a.label-info:hover, .user-css-map-sidebar a .label-info:hover {
     background: #eeeded;
     color: #334343;
 }
 
-.user-css-presentation .label-success {
+.user-css-presentation .label-success,
+.user-css-map-sidebar .label-success {
     background: #aabaaa;
     color: #334333;
 }
 
-.user-css-presentation a.label-success:hover, .user-css-presentation a .label-success:hover {
+.user-css-presentation a.label-success:hover, .user-css-presentation a .label-success:hover,
+.user-css-map-sidebar a.label-success:hover, .user-css-map-sidebar a .label-success:hover {
     background: #eeedee;
     color: #334333;
 }
 
-.user-css-presentation .label-warning {
+.user-css-presentation .label-warning,
+.user-css-map-sidebar .label-warning {
     background: #babaaa;
     color: #434333;
 }
 
-.user-css-presentation a.label-warning:hover, .user-css-presentation a .label-warning:hover {
+.user-css-presentation a.label-warning:hover, .user-css-presentation a .label-warning:hover,
+.user-css-map-sidebar a.label-warning:hover, .user-css-map-sidebar a .label-warning:hover {
     background: #ededee;
     color: #434333;
 }
 
-.user-css-presentation .label-danger {
+.user-css-presentation .label-danger,
+.user-css-map-sidebar .label-danger {
     background: #baaaaa;
     color: #433333;
 }
 
-.user-css-presentation a.label-danger:hover, .user-css-presentation a .label-danger:hover {
+.user-css-presentation a.label-danger:hover, .user-css-presentation a .label-danger:hover,
+.user-css-map-sidebar a.label-danger:hover, .user-css-map-sidebar a .label-danger:hover {
     background: #edeeee;
     color: #433333;
 }
@@ -1057,8 +1149,7 @@
 
 /* ROW BORDER GROUP */
 .user-css-presentation .row-border-group .user-row .col-md-6,
-.user-css-presentation .row-border-group .user-row .col-md-4
-{
+.user-css-presentation .row-border-group .user-row .col-md-4 {
     border-color: var(--accentA);
 }
 
@@ -1123,7 +1214,8 @@
 }
 
 /* SPOILERS */
-.user-css-presentation .spoiler-content {
+.user-css-presentation .spoiler-content,
+.user-css-map-sidebar .spoiler-content {
     background-color: var(--accent3Transparent);
     border-color: var(--accentATransparent);
     color: var(--accentDMuted);
@@ -1139,50 +1231,60 @@
 }
 
 /* TABLES */
-.user-css-presentation .table {
+.user-css-presentation .table,
+.user-css-map-sidebar .table {
     box-shadow: 0 0 2px 2px var(--defaultDTransparent);
 }
 
-.user-css-presentation .table tr td {
+.user-css-presentation .table tr td,
+.user-css-map-sidebar .table tr td {
     background: var(--default3Transparent);
     color: var(--defaultDMuted);
 }
 
-.user-css-presentation .table tr th {
+.user-css-presentation .table tr th,
+.user-css-map-sidebar .table tr th {
     background: var(--primary5Transparent);
     color: var(--primaryDMuted);
 }
 
-.user-css-presentation .table-striped tr:nth-child(odd) td {
+.user-css-presentation .table-striped tr:nth-child(odd) td,
+.user-css-map-sidebar .table-striped tr:nth-child(odd) td {
     background: var(--accent4Transparent);
     color: var(--accentDMuted);
 }
 
-.user-css-presentation .table tr:hover td {
+.user-css-presentation .table tr:hover td,
+.user-css-map-sidebar .table tr:hover td {
     background: var(--primary8Transparent);
     color: var(--primaryDMuted);
 }
 
 /* TEXT */
-.user-css-presentation .text-primary {
+.user-css-presentation .text-primary,
+.user-css-map-sidebar .text-primary {
     color: var(--primaryA);
 }
 
-.user-css-presentation .text-secondary {
+.user-css-presentation .text-secondary,
+.user-css-map-sidebar .text-secondary {
     color: var(--accentA);
 }
 
 /* IMAGES */
-.user-css-presentation .artist-credits {
+.user-css-presentation .artist-credits,
+.user-css-map-sidebar .artist-credits {
     background: var(--accent5Transparent);
     color: var(--accentDMuted);
 }
 
-.user-css-presentation .user-css-presentation-image-thumbnail {
+.user-css-presentation .user-css-image-thumbnail,
+.user-css-map-sidebar .user-css-image-thumbnail {
     background: var(--accent5Transparent);
 }
 
-.user-css-presentation .user-css-presentation-image-thumbnail .artist-credits {
+.user-css-presentation .user-css-image-thumbnail .artist-credits,
+.user-css-map-sidebar .user-css-image-thumbnail .artist-credits {
     background: var(--primary5Transparent);
     color: var(--primaryDMuted);
 }
@@ -1239,36 +1341,42 @@
 }
 
 /* TOOLTIPS */
-.user-css-presentation .tooltip.top .tooltip-arrow {
+.user-css-presentation .tooltip.top .tooltip-arrow,
+.user-css-map-sidebar .tooltip.top .tooltip-arrow {
     border-top-color: var(--primaryA);
 }
 
-.user-css-presentation .tooltip.left .tooltip-arrow {
+.user-css-presentation .tooltip.left .tooltip-arrow,
+.user-css-map-sidebar .tooltip.left .tooltip-arrow {
     border-left-color: var(--primaryA);
 }
 
-.user-css-presentation .tooltip.bottom .tooltip-arrow {
+.user-css-presentation .tooltip.bottom .tooltip-arrow,
+.user-css-map-sidebar .tooltip.bottom .tooltip-arrow {
     border-bottom-color: var(--primaryA);
 }
 
-.user-css-presentation .tooltip.right .tooltip-arrow {
+.user-css-presentation .tooltip.right .tooltip-arrow,
+.user-css-map-sidebar .tooltip.right .tooltip-arrow {
     border-right-color: var(--primaryA);
 }
 
-.user-css-presentation .tooltip .tooltip-inner {
+.user-css-presentation .tooltip .tooltip-inner,
+.user-css-map-sidebar .tooltip .tooltip-inner {
     background: var(--primary1);
-    border-color: var(--primaryA);
     color: var(--primaryDMuted);
     box-shadow: 0 0 2px 2px var(--primaryATransparent);
 }
 
 /* CODE/PRE */
-.user-css-presentation code, .user-css-presentation pre, .user-css-presentation .panel code {
+.user-css-presentation code, .user-css-presentation pre, .user-css-presentation .panel code,
+.user-css-map-sidebar code, .user-css-map-sidebar pre {
     background-color: var(--defaultDMuted);
     color: var(--default2Muted);
 }
 
-.user-css-presentation blockquote code, .user-css-presentation blockquote pre, .user-css-presentation .panel-primary code, .user-css-presentation .panel-primary pre {
+.user-css-presentation blockquote code, .user-css-presentation blockquote pre, .user-css-presentation .panel-primary code, .user-css-presentation .panel-primary pre,
+.user-css-map-sidebar blockquote code, .user-css-map-sidebar blockquote pre {
     background-color: var(--primaryE);
     color: var(--primary1Muted);
 }
@@ -1279,7 +1387,8 @@
 }
 
 /* SMALL/TEXT_Muted */
-.user-css-presentation small, .user-css-presentation .text-muted {
+.user-css-presentation small, .user-css-presentation .text-muted,
+.user-css-map-sidebar small, .user-css-map-sidebar .text-muted {
     color: var(--default8Muted);
 }
 
@@ -1292,7 +1401,8 @@
 }
 
 /* WELLS */
-.user-css-presentation .well {
+.user-css-presentation .well,
+.user-css-map-sidebar .well {
     background-color: var(--accent5Transparent);
     color: var(--accentDMuted);
     box-shadow: 0 0 2px 2px var(--accentATransparent);
@@ -1312,7 +1422,8 @@
 
 /* HARDCODED COLORS */
 /* ALERTS */
-.user-css-presentation .alert-success {
+.user-css-presentation .alert-success,
+.user-css-map-sidebar .alert-success {
     background-color: rgba(0, 66, 0, 0.5);
     border-color: rgba(0, 201, 0, 0.5);
     color: #DCEADC;
@@ -1320,11 +1431,13 @@
     box-shadow: 0 0 2px 2px rgba(0, 201, 0, 0.5);
 }
 
-.user-css-presentation .alert-success h5:first-child {
+.user-css-presentation .alert-success h5:first-child,
+.user-css-map-sidebar .alert-success h5:first-child {
     color: #DCEADC;
 }
 
-.user-css-presentation .alert-info {
+.user-css-presentation .alert-info,
+.user-css-map-sidebar .alert-info {
     background-color: rgba(0, 66, 66, 0.5);
     border-color: rgba(0, 201, 201, 0.5);
     color: #DCEAEA;
@@ -1332,11 +1445,13 @@
     box-shadow: 0 0 2px 2px rgba(0, 201, 201, 0.5);
 }
 
-.user-css-presentation .alert-info h5:first-child {
+.user-css-presentation .alert-info h5:first-child,
+.user-css-map-sidebar .alert-info h5:first-child {
     color: #DCEAEA;
 }
 
-.user-css-presentation .alert-warning {
+.user-css-presentation .alert-warning,
+.user-css-map-sidebar .alert-warning {
     background-color: rgba(66, 66, 0, 0.5);
     border-color: rgba(201, 201, 0, 0.5);
     color: #EAEADC;
@@ -1344,11 +1459,13 @@
     box-shadow: 0 0 2px 2px rgba(201, 201, 0, 0.5);
 }
 
-.user-css-presentation .alert-warning h5:first-child {
+.user-css-presentation .alert-warning h5:first-child,
+.user-css-map-sidebar .alert-warning h5:first-child {
     color: #EAEADC;
 }
 
-.user-css-presentation .alert-danger {
+.user-css-presentation .alert-danger,
+.user-css-map-sidebar .alert-danger {
     background-color: rgba(66, 0, 0, 0.5);
     border-color: rgba(201, 0, 0, 0.5);
     color: #EADCDC;
@@ -1356,47 +1473,56 @@
     box-shadow: 0 0 2px 2px rgba(201, 0, 0, 0.5);
 }
 
-.user-css-presentation .alert-danger h5:first-child {
+.user-css-presentation .alert-danger h5:first-child,
+.user-css-map-sidebar .alert-danger h5:first-child {
     color: #EADCDC;
 }
 
 /* BUTTONS */
-.user-css-presentation .btn-info {
+.user-css-presentation .btn-info,
+.user-css-map-sidebar .btn-info {
     color: #ddeded !important;
     background: rgba(0, 186, 186, 0.5) !important;
 }
 
-.user-css-presentation .btn-info:hover {
+.user-css-presentation .btn-info:hover,
+.user-css-map-sidebar .btn-info:hover {
     color: #eefefe !important;
     background: rgba(0, 237, 237, 0.5) !important;
 }
 
-.user-css-presentation .btn-success {
+.user-css-presentation .btn-success,
+.user-css-map-sidebar .btn-success {
     color: #ddeddd !important;
     background: rgba(0, 186, 0, 0.5) !important;
 }
 
-.user-css-presentation .btn-success:hover {
+.user-css-presentation .btn-success:hover,
+.user-css-map-sidebar .btn-success:hover {
     color: #eefeee !important;
     background: rgba(0, 237, 0, 0.5) !important;
 }
 
-.user-css-presentation .btn-warning {
+.user-css-presentation .btn-warning,
+.user-css-map-sidebar .btn-warning {
     color: #ededdd !important;
     background: rgba(186, 186, 0, 0.5) !important;
 }
 
-.user-css-presentation .btn-warning:hover {
+.user-css-presentation .btn-warning:hover,
+.user-css-map-sidebar .btn-warning:hover {
     color: #fefeee !important;
     background: rgba(237, 237, 0, 0.5) !important;
 }
 
-.user-css-presentation .btn-danger {
+.user-css-presentation .btn-danger,
+.user-css-map-sidebar .btn-danger {
     color: #eddddd !important;
     background: rgba(186, 0, 0, 0.5) !important;
 }
 
-.user-css-presentation .btn-danger:hover {
+.user-css-presentation .btn-danger:hover,
+.user-css-map-sidebar .btn-danger:hover {
     color: #feeeee !important;
     background: rgba(237, 0, 0, 0.5) !important;
 }
@@ -1603,24 +1729,28 @@
 }
 
 /* TEXT */
-.user-css-presentation .text-success {
+.user-css-presentation .text-success,
+.user-css-map-sidebar .text-success {
     color: #55CA55;
 }
 
-.user-css-presentation .text-warning {
+.user-css-presentation .text-warning,
+.user-css-map-sidebar .text-warning {
     color: #caca55;
 }
 
-.user-css-presentation .text-info {
+.user-css-presentation .text-info,
+.user-css-map-sidebar .text-info {
     color: #55caca;
 }
 
-.user-css-presentation .text-danger {
+.user-css-presentation .text-danger,
+.user-css-map-sidebar .text-danger {
     color: #ca5555;
 }
 
 /* Color Theme: Default (WA public) */
-.user-css-presentation {
+.user-css-presentation, .user-css-map-sidebar {
     /* Default Color: Yellow-Green (Hue 65) */
     --default1: #1D1E0F;
     --default2: #2F3020;
