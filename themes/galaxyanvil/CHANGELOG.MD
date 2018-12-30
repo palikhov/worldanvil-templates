@@ -18,7 +18,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
  - Colors used for horizontal rules (`[hr]`)
    - `hr` now uses `default` color
    - `hr` contained in `.panel-primary` and `.panel-npcsheet` now uses `primary` color
+ - Color used for embedded image artist credits (Now using `primary` color)
 
 ### Fixed
- - Missing background for embedded image thumbnails (Transparent default color)
- - Incorrect color used for embedded image artist credits (Now using primary color)
+ - Missing background for embedded image thumbnails (Transparent `default` color)
