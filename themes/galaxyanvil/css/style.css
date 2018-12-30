@@ -28,16 +28,20 @@
 
 /* LAYOUT - MAIN */
 .user-css-presentation .page, .user-css-presentation .worldmenu-inner,
-.user-css-map-sidebar {
+.user-css-map-sidebar, .user-css-map {
     background-image: none;
     font-family: IBM Plex Sans Condensed, sans-serif;
     border: none;
+}
+
+.user-css-presentation .page, .user-css-presentation .worldmenu-inner {
     border-radius: 5px;
 }
 
 /* LAYOUT - HTML */
 .user-css-presentation a, .user-css-presentation a:focus, .user-css-presentation b,
-.user-css-map-sidebar a, .user-css-map-sidebar a:focus, .user-css-map-sidebar b {
+.user-css-map-sidebar a, .user-css-map-sidebar a:focus, .user-css-map-sidebar b,
+.user-css-map a, .user-css-map a:focus, .user-css-map b {
     font-weight: bold;
 }
 
@@ -70,12 +74,14 @@
 }
 
 .user-css-presentation h1, .user-css-presentation h1 a,
+.user-css-map h1, .user-css-map h1 a,
 .user-css-map-sidebar h1 {
     font-size: 42px;
     font-family: Mina, serif;
 }
 
 .user-css-presentation h2,
+.user-css-map h2,
 .user-css-map-sidebar h2 {
     font-size: 30px;
     font-family: Mina, serif;
@@ -85,6 +91,7 @@
 }
 
 .user-css-presentation h3,
+.user-css-map h3,
 .user-css-map-sidebar h3 {
     font-family: Mina, serif;
     font-size: 24px;
@@ -94,6 +101,7 @@
 }
 
 .user-css-presentation h4,
+.user-css-map h4,
 .user-css-map-sidebar h4 {
     font-family: Mina, serif;
     font-size: 20px;
@@ -103,6 +111,7 @@
 }
 
 .user-css-presentation h5,
+.user-css-map h5,
 .user-css-map-sidebar h5 {
     font-family: Mina, serif;
     font-size: 16px;
@@ -112,6 +121,7 @@
 }
 
 .user-css-presentation h6,
+.user-css-map h6,
 .user-css-map-sidebar h6 {
     font-family: Mina, serif;
     font-size: 14px;
@@ -1750,7 +1760,7 @@
 }
 
 /* Color Theme: Default (WA public) */
-.user-css-presentation, .user-css-map-sidebar {
+.user-css-presentation, .user-css-map-sidebar, .user-css-map {
     /* Default Color: Yellow-Green (Hue 65) */
     --default1: #1D1E0F;
     --default2: #2F3020;

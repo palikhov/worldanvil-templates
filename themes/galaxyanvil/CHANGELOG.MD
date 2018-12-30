@@ -11,7 +11,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
    - This allows borders to be added to `[container:col-md-12]` blocks that span an entire row.
  - Support for `.panel-npcsheet`
  - Support for WorldAnvil Maps v2.0
-    - Information sidebar (Using the `.user-css-map-sidebar` selector)
+   - Information sidebar (Using the `.user-css-map-sidebar` selector)
+   - World-info dropdown (Using the `.user-css-map` selector)
 
 ### Changed
  - Colors used for horizontal rules (`[hr]`)
